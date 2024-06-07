@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Interactive Quiz Game</title> 
+    <link rel="icon" href="quiz.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="start-container">
+        <div id="start-button-container">
+            <button id="start-button" onclick="startQuiz()">Start Quiz !</button>
+        </div>
+    </div>
+    <div id="quiz-container" style="display:none;">
+        <div id="quiz">
+            <h2 id="question">Question will appear here</h2>
+            <div id="choices">
+                <button class="choice" onclick="selectAnswer(0)">Choice 1</button>
+                <button class="choice" onclick="selectAnswer(1)">Choice 2</button>
+                <button class="choice" onclick="selectAnswer(2)">Choice 3</button>
+                <button class="choice" onclick="selectAnswer(3)">Choice 4</button>
+            </div>
+        </div>
+        <div id="quiz-footer">
+            <p id="timer">Time Left: <span id="time">60</span>s</p>
+            <p id="score">Score: <span id="current-score">0</span></p>
+        </div>
+    </div>
+    <div id="result-container" style="display:none;">
+        <h2>Quiz Completed!</h2>
+        <table id="result-table">
+            <tr>
+                <th>Question Number</th>
+                <th>Feedback</th>
+            </tr>
+        </table>
+        <p>Final score: <span id="final-score">0</span></p>
+        <button onclick="restartQuiz()">Restart Quiz</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,159 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0e6ff; /* Soft lavender background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#start-container {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+}
+/* Add this CSS to your existing stylesheet */
+
+
+
+
+#start-button {
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #7d5fff; /* Light purple button */
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    transition: background-color 0.3s;
+    display: flex;
+}
+
+#start-button:hover {
+    background-color: #6a4ae2; /* Darker purple on hover */
+}
+
+#quiz-container {
+    background-color: #fff; /* White quiz background */
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    width: 80%;
+    max-width: 500px;
+    padding: 30px;
+    box-sizing: border-box;
+    text-align: center;
+    animation: fadeIn 0.8s ease forwards; /* Fade in animation */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#question {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #4a4a4a; /* Dark gray text */
+}
+
+.choice {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 15px;
+    font-size: 18px;
+    background-color: #7d5fff; /* Light purple button */
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.choice:hover {
+    background-color: #6a4ae2; /* Darker purple on hover */
+}
+
+#quiz-footer {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#timer, #score {
+    font-size: 18px;
+    color: #4a4a4a; /* Dark gray text */
+}
+
+#result-container {
+    text-align: center;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: #fff; /* White background */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    animation: fadeIn 0.8s ease forwards; /* Fade in animation */
+}
+
+#result-container h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color:#7d5fff; /* Dark gray text */
+}
+
+#result-container p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #3a3a3a; /* Dark gray text */
+}
+
+#result-container button {
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #7d5fff; /* Light purple button */
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#result-container button:hover {
+    background-color: #6a4ae2; /* Darker purple on hover */
+}
+
+
+
+#result-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#result-table th,
+#result-table td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    text-align: left; /* Align text to the left */
+}
+
+#result-table th {
+    background-color: #f2f2f2;
+}
+
+
+
+/* Add this CSS to your existing stylesheet */
+
+
+
+
